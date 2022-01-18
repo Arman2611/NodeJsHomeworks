@@ -8,3 +8,5 @@ Task 2: Write a program to flatten an array
 Task 3: Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys
 
 Task 4: Implement a doubly linked list
+
+Task 5: Create a Avengers battle game with setIntervals
