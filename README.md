@@ -10,3 +10,5 @@ Task 3: Write a JavaScript function to get a copy of the object where the keys h
 Task 4: Implement a doubly linked list
 
 Task 5: Create a Avengers battle game with setIntervals
+
+Task 7: Create a Node JS application that will recursively search all files in the directory given in command-line arguments and create a new file sorted_files.txt and write file paths and sizes in this file line by line sorted by file size.
