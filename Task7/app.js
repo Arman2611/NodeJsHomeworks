@@ -54,6 +54,7 @@ try {
 		addFileSize(address);
 	});
 } catch(error) {
+	console.log(error)
 	console.log("This directory doesn't exist");
 	return;
 }
