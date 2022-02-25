@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+	head
+		title Edit contact
+		link(rel="stylesheet" href="/css/style.css")
+		link(rel="icon" href="/images/favicon.ico")
+		script(src="/scripts/edit_contact.js" defer)
+	body
+		div.contact-alert-box 
+			h4.contact-message-box
+		div#delete-popup-container(style="display: none")
+			div#delete-popup
+				h3 Are you sure you want to delete this contact?
+				div#delete-popup-button-box
+					span#delete-popup-yes YES
+					span#delete-popup-no NO
+		main
+			h1 Edit contact							
+			div.contact-form
+				label Name 
+					input(type="text" placeholder="Name" value=`${name}` maxlength="16" required)
+				label Phone 
+					input(type="tel" placeholder="+374 XX XX XX XX" value=`${phone}` maxlength="16" required)
+				div#edit-button-box
+					span('data-delete-link'=`/contacts/delete/:${id}`)#delete-btn Delete
+					span('data-id'=`${id}`)#save-btn Save
+				br
+				a(href="/").to-main-page-link Go to main page

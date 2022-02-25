@@ -1,0 +1,216 @@
+
+
+/* ---------------------- Global styles ---------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	margin: 0 auto;
+	min-height: 100vh;
+	background-color: #F3F5F9;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 60px 10px;
+}
+
+.to-main-page-link {
+	color: black;
+}
+
+
+
+/* ---------------------- Contacts table ---------------------- */
+
+#contacts-table {
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+#contacts-table tr {
+	border-top: 12px solid #F3F5F9;
+}
+#contacts-table th {
+	padding: 0px 28px;
+}
+#contacts-table td {
+	background-color: #FFFFFF;
+	padding: 20px 28px;
+}
+.edit-btn {
+	color: blue;
+}
+.delete-btn {
+	text-decoration: underline;
+	cursor: pointer;
+	color: darkred;
+}
+.add-contact-btn {
+	padding: 8px 10px;
+	background-color: white;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	margin: 16px 0;
+	cursor: pointer;
+	user-select: none;
+}
+.add-contact-btn:hover {
+	box-shadow: 0 0 5px 1px black;
+}
+
+
+
+/* ---------------------- Index Message box ---------------------- */
+
+#index-alert-box {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	color: green;
+	display: flex;
+	justify-content: center;
+}
+
+#index-message-box {
+	opacity: 0;
+	transition: opacity 1.5s ease-in-out;
+	transition-delay: 0.2s;
+	user-select: none;
+}
+
+
+
+/* ---------------------- Delete popup ---------------------- */
+
+#delete-popup-container {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	background-color: rgba(22,24,28, 0.75);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 40px;
+}
+#delete-popup {
+	max-width: 360px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 40px;
+	box-shadow: 0 0 5px 1px black;
+}
+#delete-popup h3 {
+	user-select: none;
+}
+#delete-popup-button-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#delete-popup-button-box span {
+	width: 60px;
+	padding: 6px 10px;
+	margin: 4px;
+	border: 1px solid black;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+#delete-popup-button-box span:hover {
+	box-shadow: 0 0 5px 1px black;
+}
+#delete-popup-yes {
+	background-color: red;
+}
+#delete-popup-no {
+	background-color: lightgreen;
+}
+
+
+
+/* ------------------- Add and Edit Forms ------------------- */
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-form label {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+.contact-form input {
+	padding: 10px 18px;
+	margin: 10px 10px;
+	width: 160px;
+}
+.contact-alert-box {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	color: orangered;
+	display: flex;
+	justify-content: center;
+}
+.contact-message-box {
+	opacity: 0;
+	transition: opacity 0.8s ease-in-out;
+	transition-delay: 0s;
+	user-select: none;
+}
+
+
+
+/* ------------------- Edit Contact page ------------------- */
+
+#edit-button-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+#edit-button-box span {
+	width: 60px;
+	padding: 6px 10px;
+	margin: 4px;
+	border: 1px solid black;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+#edit-button-box span:hover {
+	box-shadow: 0 0 5px 1px black;
+}
+#save-btn {
+	background-color: lightgreen;
+}
+#delete-btn {
+	background-color: red;
+}

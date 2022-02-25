@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+	head
+		title Contact list
+		link(rel="stylesheet" href="/css/style.css")
+		link(rel="icon" href="/images/favicon.ico")
+		script(src="/scripts/index.js" defer)
+	body
+		div#index-alert-box
+			h4#index-message-box
+		div#delete-popup-container(style="display: none")
+			div#delete-popup
+				h3 Are you sure you want to delete this contact?
+				div#delete-popup-button-box
+					span#delete-popup-yes YES
+					span#delete-popup-no NO
+		main
+
+			if base[0]
+				h1 Contact list
+			else
+				h1 Contact list is empty
+							
+			table#contacts-table
+				col(style="width: 120px")
+				col(style="width: 300px")
+				col(style="width: 60px")
+				col(style="width: 60px")
+
+				if base[0]
+					tr
+						th Name
+						th Phone
+						th
+						th
+				each obj in base
+					tr
+						td= obj.name
+						td= obj.phone
+						td 
+							a(href=`/contacts/edit/:${obj.id}`).edit-btn Edit
+						td 
+							span('data-delete-link'=`/contacts/delete/:${obj.id}`).delete-btn Delete
+			a(href="/new").add-contact-btn Add Contact

@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+	head
+		title Add new contact
+		link(rel="stylesheet" href="/css/style.css")
+		link(rel="icon" href="/images/favicon.ico")
+		script(src="/scripts/new_contact.js" defer)
+	body
+		div.contact-alert-box 
+			h4.contact-message-box
+		main
+			h1 Add new contact							
+			div.contact-form
+				label Name 
+					input(type="text" placeholder="Name" maxlength="16" required)
+				label Phone 
+					input(type="tel" placeholder="+374 XX XX XX XX" maxlength="16" required)
+				button.add-contact-btn Add contact
+				br
+				a(href="/").to-main-page-link Go to main page
